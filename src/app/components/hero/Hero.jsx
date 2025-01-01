@@ -16,7 +16,7 @@ const Hero = () => {
               <img
                 alt=""
                 src="images/dummy.png"
-                data-lazyload="images/banner.jpg"
+                data-lazyload="images/banner.png"
               />
               <div
                 className="caption lft large-title tp-resizeme slidertext4"
@@ -25,7 +25,7 @@ const Hero = () => {
                 data-speed={600}
                 data-start={1600}
               >
-                Welcome to Construction Company
+                Welcome to Lacrete Concept Construction Company
               </div>
               <div
                 className="caption lft large-title tp-resizeme slidertext1"
@@ -43,10 +43,8 @@ const Hero = () => {
                 data-speed={600}
                 data-start={2800}
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                dapibus ex sed eros molestie blandit. Fusce <br />
-                sem enim, commodo sit amet diam pharetra, aliquet pulvinar
-                purus.
+                Our approach to all customer services is based upon an
+                understanding of organizational needs and problems
               </div>
               <div
                 className="caption lfl large-title tp-resizeme slidertext3"
@@ -55,19 +53,8 @@ const Hero = () => {
                 data-speed={600}
                 data-start={3500}
               >
-                {" "}
                 <a
-                  href="#"
-                  className="main-btn btn-1 btn-1e white_color"
-                  data-dismiss="modal"
-                  aria-label="Close"
-                  data-toggle="modal"
-                  data-target=".bs-example-modal-md-2"
-                >
-                  Get Started
-                </a>{" "}
-                <a
-                  href="contact.html"
+                  href="/contact"
                   className="main-btn btn-1 btn-1e white_color"
                 >
                   Contact Us
@@ -84,7 +71,7 @@ const Hero = () => {
               <img
                 alt=""
                 src="images/dummy.png"
-                data-lazyload="images/banner-1.jpg"
+                data-lazyload="images/banner-1.png"
               />
               <div
                 className="caption lft large-title tp-resizeme slidertext4"
@@ -102,7 +89,7 @@ const Hero = () => {
                 data-speed={600}
                 data-start={2200}
               >
-                We Build Big Things For Our Peoples
+                We Build Big Things For Our People
               </div>
               <div
                 className="caption lfb large-title tp-resizeme slidertext2"
@@ -111,10 +98,7 @@ const Hero = () => {
                 data-speed={600}
                 data-start={2800}
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                dapibus ex sed eros molestie blandit. Fusce <br />
-                sem enim, commodo sit amet diam pharetra, aliquet pulvinar
-                purus.
+                Willingness to undertake new and challenging assignments.
               </div>
               <div
                 className="caption lfl large-title tp-resizeme slidertext3"
@@ -123,19 +107,8 @@ const Hero = () => {
                 data-speed={600}
                 data-start={3500}
               >
-                {" "}
                 <a
-                  href="#"
-                  className="main-btn btn-1 btn-1e white_color"
-                  data-dismiss="modal"
-                  aria-label="Close"
-                  data-toggle="modal"
-                  data-target=".bs-example-modal-md-2"
-                >
-                  Get Started
-                </a>{" "}
-                <a
-                  href="contact.html"
+                  href="/contact"
                   className="main-btn btn-1 btn-1e white_color"
                 >
                   Contact Us
@@ -179,10 +152,8 @@ const Hero = () => {
                 data-speed={600}
                 data-start={2800}
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                dapibus ex sed eros molestie blandit. Fusce <br />
-                sem enim, commodo sit amet diam pharetra, aliquet pulvinar
-                purus.
+                Our approach to all customer services is based upon an
+                understanding of organizational needs and problems
               </div>
               <div
                 className="caption lfl large-title tp-resizeme slidertext3"
@@ -191,19 +162,8 @@ const Hero = () => {
                 data-speed={600}
                 data-start={3500}
               >
-                {" "}
                 <a
-                  href="#"
-                  className="main-btn btn-1 btn-1e white_color"
-                  data-dismiss="modal"
-                  aria-label="Close"
-                  data-toggle="modal"
-                  data-target=".bs-example-modal-md-2"
-                >
-                  Get Started
-                </a>{" "}
-                <a
-                  href="contact.html"
+                  href="/contact"
                   className="main-btn btn-1 btn-1e white_color"
                 >
                   Contact Us
@@ -223,7 +183,7 @@ const Hero = () => {
             </div>
             <div className="col-md-3">
               <div className="quote-btn">
-                <a href="#">get a Quote</a>
+                <a href="/contact">get a Quote</a>
               </div>
             </div>
           </div>

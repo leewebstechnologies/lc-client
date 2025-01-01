@@ -16,21 +16,16 @@ const links = [
   },
   {
     id: 3,
-    title: "Services",
-    url: "/services",
-  },
-  {
-    id: 4,
     title: "Projects",
     url: "/projects",
   },
   {
-    id: 5,
+    id: 4,
     title: "Blog",
     url: "/blog",
   },
   {
-    id: 6,
+    id: 5,
     title: "Contact",
     url: "/contact",
   },
@@ -82,21 +77,13 @@ const Navbar = () => {
                 </li>
                 <li>
                   <a href="#.">
-                    <i className="fa fa-vimeo-square" aria-hidden="true" />
+                    <i
+                      className="fa-brands fa-square-whatsapp"
+                      aria-hidden="true"
+                    ></i>
                   </a>
                 </li>
               </ul>
-              <div className="btn-box">
-                <button
-                  data-dismiss="modal"
-                  aria-label="Close"
-                  data-toggle="modal"
-                  data-target=".bs-example-modal-md-2"
-                  className="brochure-btn theme-btn hvr-link"
-                >
-                  Get A Quote
-                </button>
-              </div>
             </div>
           </div>
         </div>
@@ -107,10 +94,10 @@ const Navbar = () => {
             <div className="col-md-5 col-sm-12">
               <div className="logo-outer">
                 <div className="logo">
-                  <a href="index.html">
+                  <a href="/">
                     <img
                       className="logo-default"
-                      src="images/logo-default.png"
+                      src="images/logo.png"
                       alt=""
                       title=""
                     />
@@ -128,9 +115,9 @@ const Navbar = () => {
                       data-toggle="collapse"
                       data-target=".navbar-collapse"
                     >
-                      <span className="icon-bar" />{" "}
-                      <span className="icon-bar" />{" "}
-                      <span className="icon-bar" />{" "}
+                      <span className="icon-bar" />
+                      <span className="icon-bar" />
+                      <span className="icon-bar" />
                     </button>
                   </div>
                   <div className="navbar-collapse collapse clearfix">
@@ -143,11 +130,6 @@ const Navbar = () => {
                       <li>
                         <a className="hvr-link" href="/about">
                           About
-                        </a>
-                      </li>
-                      <li>
-                        <a className="hvr-link" href="/services">
-                          Services
                         </a>
                       </li>
                       <li>
@@ -183,7 +165,7 @@ const Navbar = () => {
                 <a href="#" className="img-responsive">
                   <img
                     className="logo-default"
-                    src="images/logo-default.png"
+                    src="images/logo.png"
                     alt=""
                     title=""
                   />
@@ -199,9 +181,9 @@ const Navbar = () => {
                     data-toggle="collapse"
                     data-target=".navbar-collapse"
                   >
-                    {" "}
-                    <span className="icon-bar" /> <span className="icon-bar" />{" "}
-                    <span className="icon-bar" />{" "}
+         
+                    <span className="icon-bar" /> <span className="icon-bar" />
+                    <span className="icon-bar" />
                   </button>
                 </div>
                 <div className="navbar-collapse collapse clearfix">
@@ -214,11 +196,6 @@ const Navbar = () => {
                     <li>
                       <a className="hvr-link" href="/about">
                         About
-                      </a>
-                    </li>
-                    <li>
-                      <a className="hvr-link" href="/services">
-                        Services
                       </a>
                     </li>
                     <li>

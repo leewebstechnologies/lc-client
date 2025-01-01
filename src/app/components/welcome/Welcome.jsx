@@ -5,7 +5,7 @@ const Welcome = () => {
     <section className="about-info">
       <div
         className="about-img-pro"
-        style={{ backgroundImage: "url(images/group.jpg)" }}
+        style={{ backgroundImage: "url(images/group.png)" }}
       />
       <div className="container">
         {/*row start*/}
@@ -14,34 +14,30 @@ const Welcome = () => {
           <div className="col-md-6 col-sm-push-6">
             <div className="section-title">
               <h3>
-                24 years of experience
+                Many years of experience
                 <br />
-                <span>Welcome to Construction Company </span>
+                <span>Welcome to Lacrete Concept Construction Company </span>
               </h3>
-              <h4>Nunc porta turpis at leo posuere convallis</h4>
+              <h4>Our Mission</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                aliquet, massa ac ornare feugiat, nunc dui auctor ipsum, sed
-                posuere eros sapien id quam.
+                LA CRETE CONCEPT Mission and Policy statement is to render the
+                best quality services available anywhere with a view of
+                providing optimum customer / client satisfaction through better
+                and consistently improving operational procedures.
               </p>
             </div>
             <div className="about-description">
+              <h3>What we do:</h3>
               <ul>
-                <li>Suspendisse aliquam ligula eget odio ornare</li>
-                <li>Fusce aliquet, massa ac ornare feugiat</li>
-                <li>Sed posuere eros sapien id quam</li>
+                <li>Building & Civil Engineering Services</li>
+                <li>Design & Planning</li>
+                <li>Building & Maintenance</li>
+                <li>Steel Work</li>
               </ul>
-              <div className="readmore">
-                <button className="main-btn btn-1 btn-1e">Read More</button>
-              </div>
             </div>
           </div>
-          {/*col end*/}
-          {/*col start*/}
         </div>
-        {/*col start*/}
       </div>
-      {/*row end*/}
     </section>
   );
 };

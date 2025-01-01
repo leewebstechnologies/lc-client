@@ -1,4 +1,5 @@
 import React from "react";
+import { Brands } from "../components";
 
 const Contact = () => {
   return (
@@ -8,7 +9,7 @@ const Contact = () => {
           <h1>Contact Us</h1>
           <ul className="xs-breadcumb">
             <li>
-              <a href="index.html"> Home / </a> <a href="index.html">Pages /</a>
+              <a href="/home"> Home / </a> <a href="/home">Pages /</a>
               Contact
             </li>
           </ul>
@@ -26,7 +27,7 @@ const Contact = () => {
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
               aliquet, massa ac ornare feugiat, nunc dui auctor ipsum, sed
-              posuere eros sapien id quam.{" "}
+              posuere eros sapien id quam.
             </p>
           </div>
           {/*row start*/}
@@ -36,14 +37,14 @@ const Contact = () => {
               <div className="contact-item">
                 <div className="fig_caption">
                   <div className="icon">
-                    <i className="fa fa-map-marker" aria-hidden="true" />{" "}
+                    <i className="fa fa-map-marker" aria-hidden="true" />
                   </div>
                   <div className="details">
                     <h3>Visit our office</h3>
                     <p>
-                      {" "}
-                      <strong>13AH, SAN FRANCISCO,</strong> <br />
-                      NEW YORK, UNITED STATES
+                      <strong> 28, Abiodun Shobanjo Street, Agidingbi,</strong>
+                      <br />
+                      Ikeja, Lagos.
                     </p>
                   </div>
                 </div>
@@ -60,9 +61,7 @@ const Contact = () => {
                   <div className="details">
                     <h3>Mail us</h3>
                     <p>
-                      {" "}
-                      <strong>Yourdomain@gmail.com </strong> <br />
-                      Yourdomain@gmail.com
+                      <strong>lacreteconcept@gmail.com</strong>
                     </p>
                   </div>
                 </div>
@@ -81,7 +80,7 @@ const Contact = () => {
                     <p>
                       {" "}
                       <strong>CALL US NOW </strong> <br />
-                      703-288-3128
+                      08028752742, 08157360363
                     </p>
                   </div>
                 </div>
@@ -98,9 +97,8 @@ const Contact = () => {
                   <div className="details">
                     <h3>Working hour</h3>
                     <p>
-                      {" "}
-                      <strong>Mon - Sat : 10am to 7pm</strong> <br />
-                      Sunday : Closed
+                      <strong>Monday - Friday : 9am to 5pm</strong> <br />
+                      Weekend : Closed
                     </p>
                   </div>
                 </div>
@@ -185,104 +183,7 @@ const Contact = () => {
         </div>
       </div>
       {/*brand-section start*/}
-      <div className="brand-section">
-        {/*container start*/}
-        <div className="container">
-          <div className="brand-content">
-            <ul className="brand-slider">
-              <li>
-                <a href="#">
-                  <figure>
-                    <img
-                      src="images/company-logo/1.png"
-                      alt=""
-                      className="img-responsive"
-                    />
-                  </figure>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <figure>
-                    <img
-                      src="images/company-logo/2.png"
-                      alt=""
-                      className="img-responsive"
-                    />
-                  </figure>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <figure>
-                    <img
-                      src="images/company-logo/3.png"
-                      alt=""
-                      className="img-responsive"
-                    />
-                  </figure>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <figure>
-                    <img
-                      src="images/company-logo/4.png"
-                      alt=""
-                      className="img-responsive"
-                    />
-                  </figure>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <figure>
-                    <img
-                      src="images/company-logo/5.png"
-                      alt=""
-                      className="img-responsive"
-                    />
-                  </figure>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <figure>
-                    <img
-                      src="images/company-logo/6.png"
-                      alt=""
-                      className="img-responsive"
-                    />
-                  </figure>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <figure>
-                    <img
-                      src="images/company-logo/7.png"
-                      alt=""
-                      className="img-responsive"
-                    />
-                  </figure>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <figure>
-                    <img
-                      src="images/company-logo/8.png"
-                      alt=""
-                      className="img-responsive"
-                    />
-                  </figure>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        {/*container end*/}
-      </div>
+      <Brands />
     </>
   );
 };

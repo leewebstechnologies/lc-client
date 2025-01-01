@@ -9,114 +9,56 @@ const Brands = () => {
           <ul className="brand-slider">
             <li>
               <figure className="logo-grey-style">
-                {" "}
                 <img
                   src="images/company-logo/1.png"
-                  alt="themeforest"
+                  alt="services"
                   className="img-responsive"
                 />
-                <figcaption>
-                  <h5>Themeforest</h5>
-                </figcaption>
-                <a href="https://themeforest.net/" target="_blank" />{" "}
               </figure>
             </li>
             <li>
               <figure className="logo-grey-style">
-                {" "}
                 <img
                   src="images/company-logo/2.png"
-                  alt="photodune"
+                  alt="services"
                   className="img-responsive"
                 />
-                <figcaption>
-                  <h5>Photodune</h5>
-                </figcaption>
-                <a href="https://photodune.net/" target="_blank" />{" "}
               </figure>
             </li>
             <li>
               <figure className="logo-grey-style">
-                {" "}
                 <img
                   src="images/company-logo/3.png"
-                  alt="audiojungle"
+                  alt="services"
                   className="img-responsive"
                 />
-                <figcaption>
-                  <h5>Audiojungle</h5>
-                </figcaption>
-                <a href="https://audiojungle.net/" target="_blank" />{" "}
               </figure>
             </li>
             <li>
               <figure className="logo-grey-style">
-                {" "}
                 <img
                   src="images/company-logo/4.png"
-                  alt="codecanyon"
+                  alt="services"
                   className="img-responsive"
                 />
-                <figcaption>
-                  <h5>Codecanyon</h5>
-                </figcaption>
-                <a href="https://codecanyon.net/" target="_blank" />{" "}
               </figure>
             </li>
             <li>
               <figure className="logo-grey-style">
-                {" "}
                 <img
                   src="images/company-logo/5.png"
-                  alt="graphicriver"
+                  alt="services"
                   className="img-responsive"
                 />
-                <figcaption>
-                  <h5>Graphicriver</h5>
-                </figcaption>
-                <a href="https://graphicriver.net/" target="_blank" />{" "}
               </figure>
             </li>
             <li>
               <figure className="logo-grey-style">
-                {" "}
                 <img
                   src="images/company-logo/6.png"
-                  alt="3docean"
+                  alt="services"
                   className="img-responsive"
                 />
-                <figcaption>
-                  <h5>3docean</h5>
-                </figcaption>
-                <a href="https://3docean.net/" target="_blank" />{" "}
-              </figure>
-            </li>
-            <li>
-              <figure className="logo-grey-style">
-                {" "}
-                <img
-                  src="images/company-logo/7.png"
-                  alt="videohive"
-                  className="img-responsive"
-                />
-                <figcaption>
-                  <h5>Videohive</h5>
-                </figcaption>
-                <a href="https://videohive.net/" target="_blank" />{" "}
-              </figure>
-            </li>
-            <li>
-              <figure className="logo-grey-style">
-                {" "}
-                <img
-                  src="images/company-logo/8.png"
-                  alt="activeden"
-                  className="img-responsive"
-                />
-                <figcaption>
-                  <h5>Activeden</h5>
-                </figcaption>
-                <a href="https://activeden.net/" target="_blank" />{" "}
               </figure>
             </li>
           </ul>
