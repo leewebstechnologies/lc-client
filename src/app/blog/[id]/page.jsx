@@ -1,6 +1,5 @@
-"use client";
 import "./page.module.css";
-import { Brands } from "@/app/components";
+// import { Brands } from "@/app/components";
 import { blogDetails } from "./data";
 
 const BlogDetail = () => {
@@ -57,7 +56,7 @@ const BlogDetail = () => {
         </div>
         {/*container end*/}
       </section>
-      <Brands />
+      {/* <Brands /> */}
     </>
   );
 };
