@@ -1,3 +1,4 @@
+import { Brands } from "../components";
 import "./about.module.css";
 
 const About = () => {
@@ -154,7 +155,7 @@ const About = () => {
             <div className="col-md-4">
               <div className="why_choose_us_sec_img">
                 <img
-                  src="images/worker.png"
+                  src="images/person.png"
                   alt="img"
                   className="img-responsive"
                 />
@@ -210,106 +211,7 @@ const About = () => {
           </div>
         </div>
       </section>
-      {/*why_choose_us_sec end*/}
-      {/*brand-section start*/}
-      <div className="brand-section">
-        {/*container start*/}
-        <div className="container">
-          <div className="brand-content">
-            <ul className="brand-slider">
-              <li>
-                <a href="#">
-                  <figure>
-                    <img
-                      src="images/company-logo/1.png"
-                      alt=""
-                      className="img-responsive"
-                    />
-                  </figure>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <figure>
-                    <img
-                      src="images/company-logo/2.png"
-                      alt=""
-                      className="img-responsive"
-                    />
-                  </figure>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <figure>
-                    <img
-                      src="images/company-logo/3.png"
-                      alt=""
-                      className="img-responsive"
-                    />
-                  </figure>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <figure>
-                    <img
-                      src="images/company-logo/4.png"
-                      alt=""
-                      className="img-responsive"
-                    />
-                  </figure>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <figure>
-                    <img
-                      src="images/company-logo/5.png"
-                      alt=""
-                      className="img-responsive"
-                    />
-                  </figure>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <figure>
-                    <img
-                      src="images/company-logo/6.png"
-                      alt=""
-                      className="img-responsive"
-                    />
-                  </figure>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <figure>
-                    <img
-                      src="images/company-logo/7.png"
-                      alt=""
-                      className="img-responsive"
-                    />
-                  </figure>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <figure>
-                    <img
-                      src="images/company-logo/8.png"
-                      alt=""
-                      className="img-responsive"
-                    />
-                  </figure>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        {/*container end*/}
-      </div>
+      <Brands />
     </>
   );
 };
