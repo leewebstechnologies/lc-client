@@ -2,6 +2,7 @@ import "./globals.css";
 import Script from "next/script";
 import { Footer, Navbar } from "./components";
 
+
 export const metadata = {
   title: "La Crete Concept",
   description: "Leading Building, Construction and Real Estate Company",
@@ -51,3 +52,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+

@@ -40,7 +40,7 @@ const Navbar = () => {
             <div className="col-md-3 col-sm-6 col-xs-6">
               <div className="user-wrap">
                 <span>
-                  <a href="https://wa.me/234 802 875 2742">+234 802 875 2742</a>
+                  <a href="https://wa.me/+2348028752742">+234 802 875 2742</a>
                 </span>
                 <div className="clearfix" />
               </div>
@@ -53,30 +53,27 @@ const Navbar = () => {
             <div className="col-md-5 col-sm-6 col-xs-6">
               <ul className="top-social-icons">
                 <li>
-                  <a href="#.">
+                  <a href="https://web.facebook.com/Lacreteconcept">
                     <i className="fa fa-facebook-square" aria-hidden="true" />
                   </a>
                 </li>
                 <li>
-                  <a href="#.">
-                    <i className="fa fa-twitter-square" aria-hidden="true" />
+                  <a href="https://www.tiktok.com/@lacrete_concept?_t=ZM-8tR5goUupDp&_r=1">
+                    <i className="fa-brands fa-tiktok" aria-hidden="true" />
                   </a>
                 </li>
+
                 <li>
-                  <a href="#.">
-                    <i
-                      className="fa fa-google-plus-square"
-                      aria-hidden="true"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="#.">
+                  <a href="https://www.linkedin.com/in/aliu-ajibade-a43210139">
                     <i className="fa fa-linkedin-square" aria-hidden="true" />
                   </a>
                 </li>
                 <li>
-                  <a href="#.">
+                  <a
+                    href="https://wa.me/+2348028752742"
+                    target="_link"
+                    rel="no referrer"
+                  >
                     <i
                       className="fa-brands fa-square-whatsapp"
                       aria-hidden="true"
@@ -181,7 +178,6 @@ const Navbar = () => {
                     data-toggle="collapse"
                     data-target=".navbar-collapse"
                   >
-         
                     <span className="icon-bar" /> <span className="icon-bar" />
                     <span className="icon-bar" />
                   </button>

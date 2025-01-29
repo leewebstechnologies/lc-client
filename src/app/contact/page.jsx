@@ -9,7 +9,7 @@ const Contact = () => {
           <h1>Contact Us</h1>
           <ul className="xs-breadcumb">
             <li>
-              <a href="/home"> Home / </a> <a href="/home">Pages /</a>
+              <a href="/"> Home / </a> <a href="/">Pages /</a>
               Contact
             </li>
           </ul>
@@ -178,7 +178,15 @@ const Contact = () => {
       <div className="xs-map-sec">
         <div className="xs-maps-wraper">
           <div className="map">
-            <iframe src="https://maps.google.com/maps?width=100&height=600&hl=en&q=New%20York%2C%20USA+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed" />
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d63411.34650611288!2d3.2885464919797114!3d6.62092010694631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s28%20abiodun%20shobajo%20street!5e0!3m2!1sen!2sng!4v1735844278596!5m2!1sen!2sng"
+              width={600}
+              height={450}
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
           </div>
         </div>
       </div>

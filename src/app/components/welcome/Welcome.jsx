@@ -29,10 +29,12 @@ const Welcome = () => {
             <div className="about-description">
               <h3>What we do:</h3>
               <ul>
-                <li>Building & Civil Engineering Services</li>
-                <li>Design & Planning</li>
-                <li>Building & Maintenance</li>
-                <li>Steel Work</li>
+                <li>
+                  Building / Civil Designs (Building Plan & Structural Drawings)
+                </li>
+                <li>Building & Civil Construction Services</li>
+                <li>Building Renovation & Maintenance</li>
+                <li>Steel Works & Planning</li>
               </ul>
             </div>
           </div>

@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 
 import { Hero, Welcome, Brands } from "./components/index";
+import Testimonial from "./components/testimonial/Testimonial";
 
 export default function Home() {
   return (
@@ -18,9 +19,7 @@ export default function Home() {
                 </div>
                 <div className="counter_area">
                   <span>Many </span>
-                  <span className="counter-text">
-                    years of experience
-                  </span>
+                  <span className="counter-text">years of experience</span>
                 </div>
               </div>
             </div>
@@ -96,8 +95,7 @@ export default function Home() {
             <div className="col-md-6">
               <div className="about-video-item">
                 <div className="about-video-img">
-                  {" "}
-                  <img src="images/welcome-1.jpg" alt="" />{" "}
+                  <img src="images/welcome-1.jpg" alt="" />
                   <a
                     href="https://www.youtube.com/watch?v=Vn_FGpZJqUs"
                     className="video-play mfp-iframe xs-video"
@@ -113,97 +111,7 @@ export default function Home() {
         </div>
         {/*container end*/}
       </section>
-      {/*whychoose-wrap end*/}
-      {/*Testimonials Start*/}
-      <div className="testimonials-wrap">
-        <div className="container">
-          <div className="section-title">
-            <h3 className="white_color">Testimonials</h3>
-          </div>
-          <ul className="owl-carousel">
-            <li className="item">
-              <div className="testiWrp">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                  imperdiet odio a lectus dictum, et porttitor libero
-                  condimentum. Donec sollicitudin ex eleifend justo consectetur
-                  lobortis.{" "}
-                </p>
-                <div className="clientInfo">
-                  <div className="clientImg">
-                    <img alt="" src="images/testimonial-1.jpg" />
-                  </div>
-                  <div className="name">
-                    Jessica Jeni{" "}
-                    <span className="white_color">Lorem Ispum</span>
-                  </div>
-                  <div className="clearfix" />
-                </div>
-              </div>
-            </li>
-            <li className="item">
-              <div className="testiWrp">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                  imperdiet odio a lectus dictum, et porttitor libero
-                  condimentum. Donec sollicitudin ex eleifend justo consectetur
-                  lobortis.{" "}
-                </p>
-                <div className="clientInfo">
-                  <div className="clientImg">
-                    <img alt="" src="images/testimonial-1.jpg" />
-                  </div>
-                  <div className="name">
-                    Jessica Jeni{" "}
-                    <span className="white_color">Lorem Ispum</span>
-                  </div>
-                  <div className="clearfix" />
-                </div>
-              </div>
-            </li>
-            <li className="item">
-              <div className="testiWrp">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                  imperdiet odio a lectus dictum, et porttitor libero
-                  condimentum. Donec sollicitudin ex eleifend justo consectetur
-                  lobortis.{" "}
-                </p>
-                <div className="clientInfo">
-                  <div className="clientImg">
-                    <img alt="" src="images/testimonial-1.jpg" />
-                  </div>
-                  <div className="name">
-                    Jessica Jeni{" "}
-                    <span className="white_color">Lorem Ispum</span>
-                  </div>
-                  <div className="clearfix" />
-                </div>
-              </div>
-            </li>
-            <li className="item">
-              <div className="testiWrp">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                  imperdiet odio a lectus dictum, et porttitor libero
-                  condimentum. Donec sollicitudin ex eleifend justo consectetur
-                  lobortis.{" "}
-                </p>
-                <div className="clientInfo">
-                  <div className="clientImg">
-                    <img alt="" src="images/testimonial-1.jpg" />
-                  </div>
-                  <div className="name">
-                    Jessica Jeni{" "}
-                    <span className="white_color">Lorem Ispum</span>
-                  </div>
-                  <div className="clearfix" />
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <Testimonial />
       <Brands />
     </>
   );

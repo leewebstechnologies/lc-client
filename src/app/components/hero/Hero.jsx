@@ -1,4 +1,5 @@
-import React from "react";
+// import React, { useEffect, useState } from "react";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -12,9 +13,8 @@ const Hero = () => {
               data-masterspeed={1000}
               data-saveperformance="on"
             >
-              {" "}
               <img
-                alt=""
+                alt="name"
                 src="images/dummy.png"
                 data-lazyload="images/banner.png"
               />
@@ -34,7 +34,7 @@ const Hero = () => {
                 data-speed={600}
                 data-start={2200}
               >
-                We Build Big Things For Our Peoples
+                Willingness to undertake new and challenging assignments.
               </div>
               <div
                 className="caption lfb large-title tp-resizeme slidertext2"
@@ -43,8 +43,7 @@ const Hero = () => {
                 data-speed={600}
                 data-start={2800}
               >
-                Our approach to all customer services is based upon an
-                understanding of organizational needs and problems
+                We deliver top-notch projects
               </div>
               <div
                 className="caption lfl large-title tp-resizeme slidertext3"
@@ -67,7 +66,6 @@ const Hero = () => {
               data-masterspeed={1000}
               data-saveperformance="on"
             >
-              {" "}
               <img
                 alt=""
                 src="images/dummy.png"
@@ -80,7 +78,7 @@ const Hero = () => {
                 data-speed={600}
                 data-start={1600}
               >
-                Welcome to Construction Company
+                Welcome to Lacrete Concept Construction Company
               </div>
               <div
                 className="caption lft large-title tp-resizeme slidertext1"
@@ -89,7 +87,7 @@ const Hero = () => {
                 data-speed={600}
                 data-start={2200}
               >
-                We Build Big Things For Our People
+                We Build Quality Projects for Our Client
               </div>
               <div
                 className="caption lfb large-title tp-resizeme slidertext2"
@@ -121,7 +119,6 @@ const Hero = () => {
               data-masterspeed={1000}
               data-saveperformance="on"
             >
-              {" "}
               <img
                 alt=""
                 src="images/dummy.png"
@@ -134,7 +131,7 @@ const Hero = () => {
                 data-speed={600}
                 data-start={1600}
               >
-                Welcome to Construction Company
+                Welcome to Lacrete Concept Construction Company
               </div>
               <div
                 className="caption lft large-title tp-resizeme slidertext1"
@@ -143,7 +140,7 @@ const Hero = () => {
                 data-speed={600}
                 data-start={2200}
               >
-                We Build Big Things For Our Peoples
+                We Build Top-Notch Projects
               </div>
               <div
                 className="caption lfb large-title tp-resizeme slidertext2"
@@ -173,10 +170,8 @@ const Hero = () => {
           </ul>
         </div>
       </div>
-      {/*slider end*/}
       <div className="quick-quote">
         <div className="container">
-          {/*Row Start*/}
           <div className="row">
             <div className="col-md-9">
               <h2>Looking for a quality constructor for your next project?</h2>
@@ -187,7 +182,6 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          {/*Row End*/}
         </div>
       </div>
     </>

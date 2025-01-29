@@ -9,7 +9,7 @@ const About = () => {
           <h1>About US</h1>
           <ul className="xs-breadcumb">
             <li>
-              <a href="/home"> Home / </a> <a href="/home">Pages /</a>
+              <a href="/"> Home / </a> <a href="/">Pages /</a>
               About US
             </li>
           </ul>
@@ -50,6 +50,18 @@ const About = () => {
                   observe safety rules, procedures and codes of work practices.
                 </p>
               </div>
+              <div className="about-description">
+                <h3>Our Services:</h3>
+                <ul>
+                  <li>
+                    Building / Civil Designs (Building Plan & Structural
+                    Drawings)
+                  </li>
+                  <li>Building & Civil Construction Services</li>
+                  <li>Building Renovation & Maintenance</li>
+                  <li>Steel Works & Planning</li>
+                </ul>
+              </div>
               <div className="aboutUs-description">
                 <div className="row">
                   {/*col start*/}
@@ -62,9 +74,9 @@ const About = () => {
                         data-to={25}
                         data-speed={1000}
                       >
-                        25
+                        15
                       </span>
-                      <p>year of experience</p>
+                      <p>years of experience</p>
                     </div>
                   </div>
                   {/*col end*/}
@@ -84,7 +96,7 @@ const About = () => {
                       >
                         1756
                       </span>
-                      <p>Happy Customer</p>
+                      <p>Happy Clients</p>
                     </div>
                   </div>
                   {/*col end*/}
@@ -99,7 +111,7 @@ const About = () => {
                         data-to={88}
                         data-speed={4000}
                       >
-                        88
+                        10
                       </span>
                       <p>Professional Awards</p>
                     </div>
@@ -126,15 +138,15 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section className="get_qoute">
+      {/* <section className="get_qoute">
         <div className="container">
           <div className="section-title">
             <h2> Are you ready to take our service?</h2>
-            <h4>Nunc porta turpis at leo posuere convallis</h4>
             <p>
-              Be brought first whales he signs thing our give were all fowl sea
-              upon make firmament called face, together. I third deep days fifth
-              spirit you're is you're saw bearing{" "}
+              The team at Lacrete Concept went above and beyond to make sure we
+              were happy every step of the way. We are always available to
+              answer questions, address concerns, and ensure we were satisfied
+              with the progress. Our client's satisfaction is our priority.
             </p>
             <div className="readmore">
               <button className="main-btn btn-1 btn-1e white_color">
@@ -143,7 +155,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="why_choose_us_sec">
         <div className="container">
           <div className="section-title">
@@ -168,20 +180,14 @@ const About = () => {
                     {" "}
                     <i className="fa fa-users" />
                     <h3>Workers</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Fusce aliquet, massa ac ornare feugiat.
-                    </p>
+                    <p>Our workers are highly skilled and experienced.</p>
                   </div>
                 </div>
                 <div className="col-md-6">
                   <div className="single-why-choose-list">
                     <i className="fa fa-wrench" />
                     <h3>Repairs</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Fusce aliquet, massa ac ornare feugiat.
-                    </p>
+                    <p>We undertake repairs and maintenance of buildings.</p>
                   </div>
                 </div>
                 <div className="col-md-6">
@@ -189,20 +195,16 @@ const About = () => {
                     {" "}
                     <i className="fa fa-home" />
                     <h3>Home Builds</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Fusce aliquet, massa ac ornare feugiat.
-                    </p>
+                    <p>We build attractive and durable homes.</p>
                   </div>
                 </div>
                 <div className="col-md-6">
                   <div className="single-why-choose-list">
-                    {" "}
                     <i className="fa fa-map-signs" />
-                    <h3>Map Markers</h3>
+                    <h3>Superior Quality Materials</h3>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Fusce aliquet, massa ac ornare feugiat.
+                      We use superior quality materials in every project we
+                      undertake.
                     </p>
                   </div>
                 </div>

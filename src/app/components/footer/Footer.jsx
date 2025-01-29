@@ -21,30 +21,26 @@ const Footer = () => {
               </div>
               <ul className="footer-social">
                 <li>
-                  <a href="#">
+                  <a href="https://web.facebook.com/profile.php?id=61571781196207">
                     <i className="fa fa-facebook-square" aria-hidden="true" />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://x.com/Aliu94992120">
                     <i className="fa fa-twitter-square" aria-hidden="true" />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <i
-                      className="fa fa-google-plus-square"
-                      aria-hidden="true"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
+                  <a href="https://www.linkedin.com/in/aliu-ajibade-a43210139">
                     <i className="fa fa-linkedin-square" aria-hidden="true" />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a
+                    href="https://wa.me/+2348028752742"
+                    target="_link"
+                    rel="no referrer"
+                  >
                     <i
                       className="fa-brands fa-square-whatsapp"
                       aria-hidden="true"
@@ -83,17 +79,22 @@ const Footer = () => {
                   <h3 className="footer-title">Our Services</h3>
                   <ul className="service-link">
                     <li>
-                      <a href="/services">Building & Civil Engineering Services</a>
+                      <a href="/about">
+                        Building / Civil Designs (Building Plan & Structural
+                        Drawings)
+                      </a>
                     </li>
                     <li>
-                      <a href="/services">Design & Planning</a>
+                      <a href="/about">
+                        Building & Civil Construction Services
+                      </a>
                     </li>
 
                     <li>
-                      <a href="/services">Building & Maintenance</a>
+                      <a href="/about">Building Renovation & Maintenance</a>
                     </li>
                     <li>
-                      <a href="/services">Steel Work</a>
+                      <a href="/about">Steel Works & Planning</a>
                     </li>
                   </ul>
                 </div>
