@@ -3,8 +3,7 @@ import { Brands } from "../components";
 import { blogItems } from "./data";
 import "./blog.module.css";
 
-
-const Blog = async ({date, image, blogTitle, desc, slug}) => {
+const Blog = () => {
   return (
     <>
       <section className="inner-heading">
@@ -26,7 +25,7 @@ const Blog = async ({date, image, blogTitle, desc, slug}) => {
             <div className="col-md-8 col-sm-12">
               {blogItems.map((item) => (
                 <li key={item.id}>
-                  <Link className="a" href={"blog/" + slug}>
+                  <Link className="a" href={`/blog/${item.id}`}>
                     <div className="blog-inter">
                       <div className="row">
                         <div className="col-md-5 col-sm-4">

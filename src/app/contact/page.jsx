@@ -1,7 +1,7 @@
 import React from "react";
 import { Brands } from "../components";
 
-const Contact = () => {
+const Contact = ({}) => {
   return (
     <>
       <section className="inner-heading">
