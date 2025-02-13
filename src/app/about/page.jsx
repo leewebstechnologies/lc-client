@@ -138,24 +138,7 @@ const About = () => {
           </div>
         </div>
       </section>
-      {/* <section className="get_qoute">
-        <div className="container">
-          <div className="section-title">
-            <h2> Are you ready to take our service?</h2>
-            <p>
-              The team at Lacrete Concept went above and beyond to make sure we
-              were happy every step of the way. We are always available to
-              answer questions, address concerns, and ensure we were satisfied
-              with the progress. Our client's satisfaction is our priority.
-            </p>
-            <div className="readmore">
-              <button className="main-btn btn-1 btn-1e white_color">
-                Submit
-              </button>
-            </div>
-          </div>
-        </div>
-      </section> */}
+     
       <section className="why_choose_us_sec">
         <div className="container">
           <div className="section-title">

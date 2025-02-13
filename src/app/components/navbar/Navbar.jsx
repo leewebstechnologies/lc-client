@@ -64,8 +64,8 @@ const Navbar = () => {
                 </li>
 
                 <li>
-                  <a href="https://www.linkedin.com/in/aliu-ajibade-a43210139">
-                    <i className="fa fa-linkedin-square" aria-hidden="true" />
+                  <a href="https://www.instagram.com/lacrete2025">
+                    <i className="fa-brands fa-instagram" aria-hidden="true" />
                   </a>
                 </li>
                 <li>

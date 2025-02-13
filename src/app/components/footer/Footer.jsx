@@ -21,18 +21,18 @@ const Footer = () => {
               </div>
               <ul className="footer-social">
                 <li>
-                  <a href="https://web.facebook.com/profile.php?id=61571781196207">
+                  <a href="https://web.facebook.com/Lacreteconcept">
                     <i className="fa fa-facebook-square" aria-hidden="true" />
                   </a>
                 </li>
                 <li>
-                  <a href="https://x.com/Aliu94992120">
-                    <i className="fa fa-twitter-square" aria-hidden="true" />
+                  <a href="https://www.tiktok.com/@lacrete_concept?_t=ZM-8tR5goUupDp&_r=1">
+                    <i className="fa-brands fa-tiktok" aria-hidden="true" />
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/in/aliu-ajibade-a43210139">
-                    <i className="fa fa-linkedin-square" aria-hidden="true" />
+                  <a href="https://www.instagram.com/lacrete2025">
+                    <i className="fa-brands fa-instagram" aria-hidden="true" />
                   </a>
                 </li>
                 <li>

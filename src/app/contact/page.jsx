@@ -1,7 +1,58 @@
+"use client";
 import React from "react";
 import { Brands } from "../components";
+import { useState } from "react";
+import client from "../../../sanity/client";
 
-const Contact = ({}) => {
+const Contact = () => {
+  const [error, setError] = useState("");
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+    subject: "",
+    phone: "",
+  });
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const { name, email, message, subject, phone } = formData;
+
+  const handleChangeInput = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (
+      formData.name === "" ||
+      formData.email === "" ||
+      formData.message === "" ||
+      formData.subject === "" ||
+      formData.phone === ""
+    ) {
+      setError("Empty field(s) ");
+      return;
+    }
+    // setLoading(true);
+
+    const contact = {
+      _type: "contact",
+      name: formData.name,
+      email: formData.email,
+      message: formData.message,
+      number: formData.number,
+      subject: formData.subject,
+    };
+
+    client.create(contact).then(() => {
+      // setLoading(false);
+      setIsFormSubmitted(true);
+      e.preventDefault();
+    });
+  };
+
   return (
     <>
       <section className="inner-heading">
@@ -15,8 +66,6 @@ const Contact = ({}) => {
           </ul>
         </div>
       </section>
-      {/*inner-heading end*/}
-      {/*inner content start*/}
       <section className="contactWrap">
         {/*container start*/}
         <div className="container">
@@ -78,7 +127,6 @@ const Contact = ({}) => {
                   <div className="details">
                     <h3>Visit our office</h3>
                     <p>
-                      {" "}
                       <strong>CALL US NOW </strong> <br />
                       08028752742, 08157360363
                     </p>
@@ -86,8 +134,6 @@ const Contact = ({}) => {
                 </div>
               </div>
             </div>
-            {/*col end*/}
-            {/*col start*/}
             <div className="col-md-3 col-sm-6 col-xs-12">
               <div className="contact-item">
                 <div className="fig_caption">
@@ -104,73 +150,97 @@ const Contact = ({}) => {
                 </div>
               </div>
             </div>
-            {/*col end*/}
           </div>
-          {/*row end*/}
           <div className="section-title margin_t40">
             <h3>
               Drop <span>your massege</span>
             </h3>
           </div>
-          <form
-            action="#"
-            method="POST"
-            id="xs-contact-form"
-            className="xs-form"
-          >
-            <div className="row">
-              <div className="col-md-6">
-                <input
-                  type="text"
-                  className="form-control"
-                  name="name"
-                  placeholder="Your name"
-                  id="xs_contact_name"
-                />
+          {!isFormSubmitted ? (
+            <form
+              action="#"
+              method="POST"
+              id="xs-contact-form"
+              className="xs-form"
+              onSubmit={handleSubmit}
+            >
+              <div className="row">
+                <div className="col-md-6">
+                  <input
+                    type="text"
+                    className="form-control"
+                    name="name"
+                    placeholder="Your name"
+                    id="xs_contact_name"
+                    value={name}
+                    onChange={handleChangeInput}
+                    required
+                  />
+                </div>
+                <div className="col-md-6">
+                  <input
+                    type="email"
+                    className="form-control invaild"
+                    name="email"
+                    placeholder="Your email"
+                    id="xs_contact_email"
+                    value={email}
+                    onChange={handleChangeInput}
+                    required
+                  />
+                </div>
               </div>
-              <div className="col-md-6">
-                <input
-                  type="email"
-                  className="form-control invaild"
-                  name="email"
-                  placeholder="Your email"
-                  id="xs_contact_email"
-                />
+              <div className="row">
+                <div className="col-md-6">
+                  <input
+                    type="number"
+                    className="form-control"
+                    name="phone"
+                    placeholder="Your phone number"
+                    id="xs_contact_phone"
+                    value={phone}
+                    onChange={handleChangeInput}
+                    required
+                  />
+                </div>
+                <div className="col-md-6">
+                  <input
+                    type="text"
+                    className="form-control"
+                    name="subject"
+                    placeholder="Subject"
+                    id="xs_contact_subject"
+                    value={subject}
+                    onChange={handleChangeInput}
+                    required
+                  />
+                </div>
               </div>
+              <textarea
+                defaultValue={message}
+                placeholder="Message"
+                id="x_contact_massage"
+                className="form-control message-box"
+                cols={30}
+                rows={10}
+                onChange={handleChangeInput}
+                required
+              />
+              <div className="readmore text-center">
+                <button
+                  className="main-btn btn-1 btn-1e"
+                  onClick={handleSubmit}
+                >
+                  Submit
+                </button>
+              </div>
+              {error !== "" && <p>{error}</p>}
+            </form>
+          ) : (
+            <div>
+              <h3 className="head-text">Thank you for getting in touch!</h3>
             </div>
-            <div className="row">
-              <div className="col-md-6">
-                <input
-                  type="text"
-                  className="form-control"
-                  name="phone-number"
-                  placeholder="Your phone number"
-                  id="xs_contact_phone"
-                />
-              </div>
-              <div className="col-md-6">
-                <input
-                  type="text"
-                  className="form-control"
-                  name="Subject"
-                  placeholder="Subject"
-                  id="xs_contact_subject"
-                />
-              </div>
-            </div>
-            <textarea
-              name="massage"
-              placeholder="Message"
-              id="x_contact_massage"
-              className="form-control message-box"
-              cols={30}
-              rows={10}
-              defaultValue={""}
-            />
-            <div className="readmore text-center">
-              <button className="main-btn btn-1 btn-1e">SEND MESSAGE</button>
-            </div>
-          </form>
+          )}
         </div>
         {/*container end*/}
       </section>
@@ -190,7 +260,6 @@ const Contact = ({}) => {
           </div>
         </div>
       </div>
-      {/*brand-section start*/}
       <Brands />
     </>
   );

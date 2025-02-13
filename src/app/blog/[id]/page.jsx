@@ -1,5 +1,4 @@
 import "./page.module.css";
-// import { Brands } from "@/app/components";
 import { blogDetails } from "./data";
 import { PortableText } from "@portabletext/react";
 
