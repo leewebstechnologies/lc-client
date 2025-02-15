@@ -32,10 +32,7 @@ const BlogDetail = () => {
                       style={{ width: "100%" }}
                       alt="portfolio"
                     />
-                    <div>
-                      <i className="fa fa-plus" />
-                    </div>
-                    <a href={`/blog/${detail.id}`} />
+                    {/* <a href={`/blog/${detail.id}`} /> */}
                   </figure>
                   <div className="post-tittle">
                     <h4>
