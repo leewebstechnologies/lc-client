@@ -2,7 +2,7 @@
 import React from "react";
 import { Brands } from "../components";
 import { useState } from "react";
-import client from "../../../sanity/client";
+import client, { sendEmailRequest } from "../../../sanity/client";
 
 const Contact = () => {
   const [error, setError] = useState("");
@@ -12,6 +12,7 @@ const Contact = () => {
     message: "",
     subject: "",
     phone: "",
+    _type: "contact",
   });
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -28,29 +29,22 @@ const Contact = () => {
     if (
       formData.name === "" ||
       formData.email === "" ||
-      formData.message === "" ||
-      formData.subject === "" ||
-      formData.phone === ""
+      formData.message === ""
     ) {
       setError("Empty field(s) ");
       return;
     }
-    // setLoading(true);
-
     const contact = {
-      _type: "contact",
-      name: formData.name,
-      email: formData.email,
+      from_name: formData.name,
+      from_email: formData.email,
       message: formData.message,
-      number: formData.number,
-      subject: formData.subject,
     };
 
-    client.create(contact).then(() => {
-      // setLoading(false);
-      setIsFormSubmitted(true);
-      e.preventDefault();
-    });
+    sendEmailRequest({
+      data: contact,
+      success: () => setIsFormSubmitted(true),
+      fail: () => setLoading(false),
+    })
   };
 
   return (
@@ -158,8 +152,6 @@ const Contact = () => {
           </div>
           {!isFormSubmitted ? (
             <form
-              action="#"
-              method="POST"
               id="xs-contact-form"
               className="xs-form"
               onSubmit={handleSubmit}
@@ -225,13 +217,14 @@ const Contact = () => {
                 rows={10}
                 onChange={handleChangeInput}
                 required
+                name="message"
               />
               <div className="readmore text-center">
                 <button
                   className="main-btn btn-1 btn-1e"
-                  onClick={handleSubmit}
+                  type="submit"
                 >
-                  Submit
+                  {loading? "Loading..." : "Submit"}
                 </button>
               </div>
               {error !== "" && <p>{error}</p>}
